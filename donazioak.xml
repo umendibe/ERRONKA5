@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<donazioak>
+    <donazioa>
+        <enpresaEmaile>
+            <IFK>A12345678</IFK>
+            <izena>Esnekiak Donostia S.L.</izena>
+        </enpresaEmaile>
+        <data>2024-05-15</data>
+        <elikagaia>
+            <mota>iragankorra</mota>
+            <ref>IR10025</ref>
+            <prodIzena>Behi esne osoa</prodIzena>
+            <kop>500</kop>
+            <manufakEnp>Lactur S.A.</manufakEnp>
+            <iraun-data>2026-03-01</iraun-data>
+            <hoztu>BAI</hoztu>
+        </elikagaia>
+    </donazioa>
+
+    <donazioa>
+        <enpresaEmaile>
+            <IFK>B87654321</IFK>
+            <izena>Gure Lurreko Kontserbak</izena>
+        </enpresaEmaile>
+        <data>2026-03-26</data>
+        <elikagaia>
+            <mota>ez iragankorra</mota>
+            <ref>EZ55443</ref>
+            <prodIzena>Lekale egosiak (Babarrunak)</prodIzena>
+            <kop>200</kop>
+            <manufakEnp>Legunbreak Elkartea</manufakEnp>
+            <kontserba>BAI</kontserba>
+        </elikagaia>
+    </donazioa>
+
+    <donazioa>
+        <enpresaEmaile>
+            <IFK>G44556677</IFK>
+            <izena>Fruitu eta Barazki Banatzailea</izena>
+        </enpresaEmaile>
+        <data>2026-03-10</data>
+        <elikagaia>
+            <mota>erdi iragankorra</mota>
+            <ref>EI99887</ref>
+            <prodIzena>Patata poltsak 5kg</prodIzena>
+            <kop>40</kop>
+            <manufakEnp>Arabako Patata Koop.</manufakEnp>
+        </elikagaia>
+    </donazioa>
+</donazioak>
