@@ -1,3 +1,4 @@
+drop database if exists erronka5;
 create database erronka5;
 use erronka5;
 
@@ -22,7 +23,7 @@ create table donatzaileak(
 );
 
 create table produktuak(
-    id int not null unique,
+    id int not null unique auto_increment,
     biltegi_kod int not null,
     izena varchar(100),
     kokapen_kod int not null,
@@ -35,7 +36,7 @@ create table produktuak(
 );
 
 create table erabiltzaileak(
-    id_erabiltzaile int not null,
+    id_erabiltzaile int not null auto_increment,
     izena varchar(150) not null,
     email varchar(200) not null,
     pasahitza varchar(200) not null,
@@ -67,7 +68,7 @@ create table ez_iragankorrak(
 );
 
 create table donazioak(
-    id_donazio int not null,
+    id_donazio int not null auto_increment,
     prod_id int not null,
     donatzaile_nan varchar(9),
     data date not null,
@@ -78,7 +79,7 @@ create table donazioak(
 );
 
 create table irteerak(
-    id_irteera int not null,
+    id_irteera int not null auto_increment,
     prod_id int not null,
     helmuga varchar(200) not null,
     bidalketa_data date not null,
