@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="donazioak">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="donazioa" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="enpresaEmaile">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="IFK" type="xs:string" />
+                                        <xs:element name="izena" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="data" type="xs:date" />
+                            <xs:element name="elikagaia" type="elikagaiaInfo" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="elikagaiaInfo">
+        <xs:sequence>
+            <xs:element name="mota" type="xs:string" />
+            <xs:element name="ref" type="xs:string" />
+            <xs:element name="prodIzena" type="xs:string" />
+            <xs:element name="kop" type="xs:integer" />
+            <xs:element name="manufakEnp" type="xs:string" />
+
+            <xs:element name="iraun-data" type="xs:date" minOccurs="0" />
+            <xs:element name="hoztu" type="xs:string" minOccurs="0" />
+            <xs:element name="kontserba" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
