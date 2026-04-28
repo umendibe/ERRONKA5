@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <donazioak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="../xsd/donazioak.xsd">
+           xsi:noNamespaceSchemaLocation="../xsd/donazioak.xsd">
     <donazioa>
         <enpresaEmaile>
             <IFK>A12345678</IFK>
             <izena>Esnekiak Donostia S.L.</izena>
         </enpresaEmaile>
         <data>2026-01-15</data>
-        <elikagaia>
-            <mota>iragankorra</mota>
+        <elikagaia mota="iragankorra">
             <ref>IR10025</ref>
             <prodIzena>Behi esne osoa</prodIzena>
             <kop>500</kop>
             <manufakEnp>Lactur S.A.</manufakEnp>
             <iraun-data>2026-03-01</iraun-data>
-            <hoztu>BAI</hoztu>
-        </elikagaia>
+            <hoztu>true</hoztu> </elikagaia>
     </donazioa>
-
+    
     <donazioa>
         <enpresaEmaile>
             <IFK>B87654321</IFK>
             <izena>Gure Lurreko Kontserbak</izena>
         </enpresaEmaile>
         <data>2026-03-26</data>
-        <elikagaia>
-            <mota>ez iragankorra</mota>
+        <elikagaia mota="ez iragankorra">
             <ref>EZ55443</ref>
             <prodIzena>Lekale egosiak (Babarrunak)</prodIzena>
             <kop>200</kop>
             <manufakEnp>Legunbreak Elkartea</manufakEnp>
-            <kontserba>BAI</kontserba>
+            <kontserba>true</kontserba>
         </elikagaia>
     </donazioa>
-
+    
     <donazioa>
         <enpresaEmaile>
             <IFK>G44556677</IFK>
             <izena>Fruitu eta Barazki Banatzailea</izena>
         </enpresaEmaile>
         <data>2026-03-10</data>
-        <elikagaia>
-            <mota>erdi iragankorra</mota>
+        <elikagaia mota="erdi iragankorra">
             <ref>EI99887</ref>
             <prodIzena>Patata poltsak 5kg</prodIzena>
             <kop>40</kop>

@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+    
+    <xs:simpleType name="IFKmota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][0-9]{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="Izenak">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="150"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="ErreferentziaMota">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(IR|EZ|EI)[0-9]{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
     <xs:element name="donazioak">
         <xs:complexType>
             <xs:sequence>
@@ -10,8 +29,8 @@
                             <xs:element name="enpresaEmaile">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="IFK" type="xs:string" />
-                                        <xs:element name="izena" type="xs:string" />
+                                        <xs:element name="IFK" type="IFKmota" />
+                                        <xs:element name="izena" type="Izenak" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -23,19 +42,25 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
+    
     <xs:complexType name="elikagaiaInfo">
         <xs:sequence>
-            <xs:element name="mota" type="xs:string" />
-            <xs:element name="ref" type="xs:string" />
-            <xs:element name="prodIzena" type="xs:string" />
-            <xs:element name="kop" type="xs:integer" />
-            <xs:element name="manufakEnp" type="xs:string" />
-
+            <xs:element name="ref" type="ErreferentziaMota" />
+            <xs:element name="prodIzena" type="Izenak" />
+            <xs:element name="kop" type="xs:nonNegativeInteger" />
+            <xs:element name="manufakEnp" type="Izenak" />
             <xs:element name="iraun-data" type="xs:date" minOccurs="0" />
-            <xs:element name="hoztu" type="xs:string" minOccurs="0" />
-            <xs:element name="kontserba" type="xs:string" minOccurs="0" />
+            <xs:element name="hoztu" type="xs:boolean" minOccurs="0" />
+            <xs:element name="kontserba" type="xs:boolean" minOccurs="0" />
         </xs:sequence>
+        <xs:attribute name="mota" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="iragankorra"/>
+                    <xs:enumeration value="ez iragankorra"/>
+                    <xs:enumeration value="erdi iragankorra"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
     </xs:complexType>
-
 </xs:schema>
