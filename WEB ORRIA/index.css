@@ -1,0 +1,53 @@
+table {
+    width: 95%;          
+    margin: 20px auto;    
+    border-collapse: collapse; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;     
+}
+
+th, td {
+    padding: 15px;       
+    text-align: left;
+    border: 1px solid #ccc; 
+}
+
+th {
+    background-color: #eb1212; 
+    color: white;
+    font-size: 18px;       
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;             
+    align-items: center;       
+    background-color: #f8f9fa; 
+    padding: 20px;
+    margin-bottom: 30px;    
+    border-bottom: 4px solid #e74c3c;
+}
+
+header img {
+    height: 80px;              
+    width: auto;
+    margin-right: 20px;       
+}
+
+.izenburua {
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #e74c3c;           
+    margin: 0;                 
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 95%;
+    margin: 0 auto;            
+    border-collapse: collapse;
+}

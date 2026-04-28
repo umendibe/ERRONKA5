@@ -1,10 +1,17 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:template match="/">
     <html>
+      <head>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+      </head>
       <body>
+        <header>
+          <img src="img/image.jpg"/>
+          <h1 class="izenburua">GURUTZE GORRIA</h1>
+        </header>
         <table border="1">
           <tr bgcolor="grey">
-            <th>Izena</th>
+            <th>Enpresaren Izena</th>
             <th>IFK</th>
             <th>Data</th>
             <th>Mota</th>
