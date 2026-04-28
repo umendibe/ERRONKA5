@@ -3,6 +3,7 @@
     <html>
       <head>
         <link rel="stylesheet" type="text/css" href="index.css"/>
+        <title>GURUTZE GORRIKO DONAZIOAK</title>
       </head>
       <body>
         <header>
