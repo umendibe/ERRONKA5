@@ -16,7 +16,6 @@
             <th>Kontserba</th>
             <th>Hoztu</th>
           </tr>
-          
           <xsl:for-each select="donazioak/donazioa">
             <tr>
               <xsl:for-each select="enpresaEmaile">
@@ -34,13 +33,8 @@
                 <td><xsl:value-of select="kontserba"/></td>
                 <td><xsl:value-of select="hoztu"/></td>
               </xsl:for-each>
-              
-              
-              
             </tr>
           </xsl:for-each>
-          
-          
         </table>
       </body>
     </html>
