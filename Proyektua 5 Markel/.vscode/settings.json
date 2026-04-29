@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "C:\\javafx\\lib*.jar",
+        "c:\\Users\\34688\\Desktop\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "git.ignoreLimitWarning": true
+}
