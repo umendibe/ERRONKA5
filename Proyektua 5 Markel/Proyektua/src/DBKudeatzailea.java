@@ -7,7 +7,7 @@ public class DBKudeatzailea {
 
     public void konektatu() {
         try {
-            konexioa = DriverManager.getConnection("jdbc:mysql://localhost:3306/erronka5", "root", "MarkelOst05");
+            konexioa = DriverManager.getConnection("jdbc:mysql://localhost:3306/erronkamarkel", "root", "Mendikp_2007");
         } catch (SQLException e) {
             System.out.println("Errorea datu-basera konektatzean: " + e.getMessage());
         }

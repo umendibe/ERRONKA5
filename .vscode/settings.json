@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Proyektua 5 Markel/Proyektua/lib/mysql-connector-j-9.6.0.jar"
+    ]
+}
